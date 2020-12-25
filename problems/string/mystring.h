@@ -24,4 +24,6 @@ void delchar(char *str, char c)
         str[i] = head[i];
     }
     str[i] = '\0';
+    free(tmp);
+    free(head);
 }
