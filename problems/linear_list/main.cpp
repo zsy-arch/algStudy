@@ -19,6 +19,20 @@ bool is_empty(LinearList &L)
     return L->next == nullptr;
 }
 
+LNode *index_of(LinearList &L, int i)
+{
+    if (i < 0)
+        return 0;
+    int j = -1;
+    LNode *p = L;
+    while (j < i)
+    {
+        j++;
+        p = p->next;
+    }
+    return p;
+}
+
 void insert(LinearList &L, int i, int value)
 {
     if (i < 0)
@@ -56,22 +70,12 @@ int main(int argc, const char *argv[])
     init_list(list);
 
     insert(list, 0, 100);
-    insert(list, 0, 300);
     insert(list, 1, 200);
-    insert(list, 3, 400);
+    insert(list, 2, 300);
+    insert(list, 1, 400);
 
-    std::cout << list->next->value;
-    std::cout << std::endl;
+    std::cout << index_of(list, 1)->value << '\n';
 
-    std::cout << list->next->next->value;
-    std::cout << std::endl;
-
-    std::cout << list->next->next->next->value;
-    std::cout << std::endl;
-
-    std::cout << list->next->next->next->next->value;
-    std::cout << std::endl;
-
-    std::cout << size(list);
+    std::cout << size(list) << '\n';
     return 0;
 }
