@@ -35,6 +35,7 @@ void insert(LinearList &L, int i, int value) {
 int main(int argc, const char *argv[]) {
     LinearList list = new LNode;
     init_list(list);
+    
     insert(list, 0, 100);
     insert(list, 0, 300);
     insert(list, 1, 200);
