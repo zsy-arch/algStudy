@@ -46,9 +46,10 @@ int main(int argc, const char *argv[]) {
 
     std::cout << list->next->next->value;
     std::cout << std::endl;
-    
+
     std::cout << list->next->next->next->value;
     std::cout << std::endl;
+    
     std::cout << list->next->next->next->next->value;
     return 0;
 }
