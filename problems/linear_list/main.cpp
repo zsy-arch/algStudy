@@ -40,11 +40,13 @@ int main(int argc, const char *argv[]) {
     insert(list, 0, 300);
     insert(list, 1, 200);
     insert(list, 3, 400);
-    
+
     std::cout << list->next->value;
     std::cout << std::endl;
+
     std::cout << list->next->next->value;
     std::cout << std::endl;
+    
     std::cout << list->next->next->next->value;
     std::cout << std::endl;
     std::cout << list->next->next->next->next->value;
