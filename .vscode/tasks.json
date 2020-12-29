@@ -3,26 +3,25 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "C/C++: cl.exe build active file",
-			"command": "cl.exe",
+			"label": "C/C++: gcc.exe build active file",
+			"command": "C:\\MyApps\\MINGW\\bin\\gcc.exe",
 			"args": [
-				"/Zi",
-				"/EHsc",
-				"/Fe:",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe",
-				"${file}"
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
 			"options": {
-				"cwd": "${workspaceFolder}"
+				"cwd": "C:\\MyApps\\MINGW\\bin"
 			},
 			"problemMatcher": [
-				"$msCompile"
+				"$gcc"
 			],
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "compiler: cl.exe"
+			"detail": "compiler: C:\\MyApps\\MINGW\\bin\\gcc.exe"
 		}
 	]
 }
