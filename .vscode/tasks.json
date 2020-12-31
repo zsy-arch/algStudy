@@ -3,9 +3,10 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "C/C++: gcc.exe build active file",
-			"command": "C:\\MyApps\\MINGW\\bin\\gcc.exe",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\MyApps\\MINGW\\bin\\g++.exe",
 			"args": [
+				"-O2",
 				"-g",
 				"${file}",
 				"-o",
@@ -21,7 +22,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "compiler: C:\\MyApps\\MINGW\\bin\\gcc.exe"
+			"detail": "compiler: C:\\MyApps\\MINGW\\bin\\g++.exe"
 		}
 	]
 }

@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "cstring": "c",
-        "ostream": "c",
-        "xlocale": "c",
-        "xstring": "c"
-    }
-}
